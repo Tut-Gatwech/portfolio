@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Software Engineering Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">Tut Gatwech Tut</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-content">
+    <img src="profile.jpg" alt="Tut Gatwech Tut" class="profile-img" />
+    <h1>Hi, I'm <span class="highlight">Tut Gatwech Tut</span></h1>
+    <p class="role-title">Full-Stack Developer & Software Engineering Student</p>
+    <p class="subtitle">Building scalable web applications, robust Java backends, and user-focused interfaces.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="resume.pdf" class="btn btn-secondary" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I am a Software Engineering student passionate about constructing clean, efficient, and user-centric web applications. 
+      My experience spans frontend dynamic interface design, Java-based backend architecture, and database persistence.
+    </p>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section bg-alt">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, JavaScript (ES6+), Responsive Web Design, DOM Manipulation</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-server skill-icon"></i>
+        <h3>Backend & DB</h3>
+        <p>Java, Servlets/JSP, RESTful APIs, MySQL, SQLite</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-tools skill-icon"></i>
+        <h3>Tools & Testing</h3>
+        <p>Git, GitHub, Postman, Software Testing, Linux CLI / PowerShell</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1: Community Incident Reporting System -->
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fas fa-shield-alt project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/Tut-Gatwech/Community-Incident-Reporting-System" target="_blank" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Community Incident Report Website</h3>
+        <p class="project-desc">
+          A full-stack web platform enabling citizens to log, track, and manage local community safety incidents with database storage.
+        </p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Servlets</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+      </div>
+
+      <!-- Project 2: Online Food Ordering System -->
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fas fa-utensils project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/Tut-Gatwech/online-food-ordering-system" target="_blank" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Online Food Ordering System</h3>
+        <p class="project-desc">
+          An interactive frontend ordering platform with dynamic menu filtering, shopping cart state management, and responsive layouts. (Backend integration in progress).
+        </p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Frontend Architecture</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-alt">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-sub">Currently seeking Full-Stack Software Engineering Internship opportunities.</p>
+    <div class="contact-links">
+<a href="mailto:tuttymachuphyg@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+      <a href="https://github.com/Tut-Gatwech" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Designed & Built for Internship Applications.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
