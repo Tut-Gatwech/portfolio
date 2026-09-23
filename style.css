@@ -343,3 +343,52 @@ footer {
     font-size: 2.1rem;
   }
 }
+/* Animated Sliding Background Quote (Right to Left) */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-quote-overlay {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.bg-quote-overlay span {
+  display: inline-block;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(37, 99, 235, 0.12);
+  letter-spacing: 1px;
+  animation: slideRightToLeft 12s linear infinite; /* Applied new keyframe name */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Updated keyframes: Start on the RIGHT, move to the LEFT */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100vw); /* Starts off-screen on the far RIGHT */
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%); /* Ends off-screen on the far LEFT */
+    opacity: 0;
+  }
+}
